@@ -4,9 +4,9 @@ This cheet sheet covers basic GitHub commands alongside their meanings and funct
 
 ## TABLE OF CONTENTS
 
-- [Setup](##SETUP)
-- [State & Snapshots](#staging-and-snapshots)
-- [Commit & Push](##commit-and-push)
+- [Setup](#setup)
+- [State & Snapshots](#staging--snapshots)
+- [Commit & Push](#commit--push)
 
 
 ## ⚙️  SETUP
@@ -53,7 +53,7 @@ git status
 
 This command will print to your terminal a list of all **local** files which either **differ from the latest remote changes** (those which have already been _pushed_ to GitHub), or file which are not being tracked by your remote repository (i.e. they have never been added ot GitHub)
 
-## 💾 COMMIT AND PUSH
+## 💾 COMMIT & PUSH
 
 Once you have finished making your desired changes locally and are ready to push them to the cloud, you can run the following sequence:
 
@@ -80,7 +80,7 @@ This adds the obligatory commit message in order to describe the nature of the l
 > Writing commit messages can be a pain, especially during long coding sessions... let AI do  it for you!
 > Run `aicommit path/to/your/file` to get AI to write your message
 
-**3. Pushing ot GitHub**
+**3. Pushing to GitHub**
 
 This is where the magic happens. Now that we have properly saved our newly-changed files, as well as their history and fingerprints to Git, it is time to push all our changes remotely, to our GitHub repository where they can live safely.
 
