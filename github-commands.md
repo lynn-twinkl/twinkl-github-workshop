@@ -1,33 +1,33 @@
-# STARTED GITHUB CHEAT SHEET
+# 🚀 STARTER GITHUB CHEAT SHEET
 
 This cheet sheet covers basic GitHub commands alongside their meanings and functions
 
 
-## SETUP
+## ⚙️  SETUP
 
 Initialising and cloning repositories
 
-**Initialising a current directory as a Git repository**
+### 1. Initialising a Git Repository
 
 ```
 git init
 ```
-This command creates a hidden `.git` subdirectory that will keep track of all the changes in your codebase
+This command creates a hidden `.git` subdirectory in your current working directory that will keep track of all the changes in your codebase
 
 Note this does not actually create a new repository on GitHub, it only initialises Git inside your directory such that it can later work alongside GitHub to store your changes and versions in the cloud.
 
-**Creating a Github Respository**
-
-The command below will actually let GitHub know that you want to store your proejct's repository in their servers
+### 2. Creating a Github Respository
 
 ```
 gh repo create your-repo-name --private --source=. --remote=origin
 ```
 
+The command below will actually let GitHub know that you want to store your proejct's repository in their servers
+
 > [!IMPORTANT]
 > Note that the `--private` flag means that your repository will only be accessible to you and other people you explicitly invite as collaborators. In order to stay legally in the clear, always make sure your company repos are set to private.
 
-**Cloning a Repository**
+### 3. Cloning a Repository
 
 Sometimes you wanna copy a repository from the GitHub GUI into your local machine such that you can make use of the codebase or even make changes to it. In order to so, you can use 
 
@@ -35,13 +35,7 @@ Sometimes you wanna copy a repository from the GitHub GUI into your local machin
 git clone git_repo_url
 ```
 
-Now, you can go into the newly-clone repository with
-
-```
-cd cloned-repo-name
-```
-
-## STAGE & SNAPSHOTS
+## 💾 STAGE & SNAPSHOTS
 
 This section covers everything to do with viewing, updating and understadning the latest state of your repository.
 
@@ -57,7 +51,7 @@ This command will print to your terminal a list of all **local** files which eit
 
 Once you have finished making your desired changes locally and are ready to push them to the cloud, you can run the following sequence:
 
-**1. Commit Your Changes To Git
+**1. Commit Your Changes To Git**
 
 ```
 git add path/to/your/file
