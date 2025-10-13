@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Script for quickly creating a github repo from inside an existin directory
+
+if [[ -z "$1" || -z "$2" ]]; then
+  echo "Usage: $0 <repo-name> <visibility: public|private|internal>"
+  echo "Example: createrepo my-sick-repo private"
+  echo "Make sure you run this command from the local directory you want to use as your repo"
+  exit 1
+fi
+
+name=$1
+visibility=$2
+
+if [[ "$visibility" != "public" && "$visibility" != "private" && "$visibility" != "internal" ]]; then
+  echo "Error: Visibility must be 'public', 'private', or 'internal'."
+  exit 1
+fi
+
+git init && \
+gh repo create "$name" --$visibility --source=. --remote=origin && \
+echo "Successfully created repo '$name' as $visibility."
