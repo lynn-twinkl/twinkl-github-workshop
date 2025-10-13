@@ -38,5 +38,34 @@ Now we'll clone your forked repo to your local device. This will allow you to ac
 git clone your_repo_url
 ```
 
+### ENABLE SHORTCUTS
 
+1. Add the `./shortcuts` directory to you PATH. This will make the shortcuts available from any directory in your device.
 
+```
+echo 'export PATH:"$HOME/twinkl-cli-shortcuts/shortcuts:$PATH"' >> ~/.bashrc
+```
+
+2. Restart your shell with the command
+
+**ON WINDOWS RUNNING WSL** 
+
+```
+source ~/.bashrc
+```
+
+**ON MAC**
+
+```
+source ~/.zshrc
+```
+
+You should now be able to use the shortcuts from anywhere by running their name and arguments. For example
+
+**Create a new repo**
+
+This will create a private github repository based on your current directory
+
+```
+createrepo my-sick-repo private
+```
