@@ -5,8 +5,8 @@ This cheet sheet covers basic GitHub commands alongside their meanings and funct
 ## TABLE OF CONTENTS
 
 - [Setup](#setup)
-- [State & Snapshots](#staging--snapshots)
-- [Commit & Push](#commit--push)
+- [State & Snapshots](#staging-snapshots)
+- [Commit & Push](#commit-push)
 
 
 ## ⚙️  SETUP
