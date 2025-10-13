@@ -2,6 +2,12 @@
 
 This cheet sheet covers basic GitHub commands alongside their meanings and functions
 
+## TABLE OF CONTENTS
+
+- [Setup](#setup)
+- [State & Snapshots](#staging-&-snapshots)
+- [Commit & Push](#commit-&-push)
+
 
 ## ⚙️  SETUP
 
@@ -35,11 +41,11 @@ Sometimes you wanna copy a repository from the GitHub GUI into your local machin
 git clone git_repo_url
 ```
 
-## 💾 STAGE & SNAPSHOTS
+## 📸 STAGING & SNAPSHOTS
 
 This section covers everything to do with viewing, updating and understadning the latest state of your repository.
 
-### CURRENT STATUS
+### 1. Current Status
 
 ```
 git status
@@ -47,7 +53,7 @@ git status
 
 This command will print to your terminal a list of all **local** files which either **differ from the latest remote changes** (those which have already been _pushed_ to GitHub), or file which are not being tracked by your remote repository (i.e. they have never been added ot GitHub)
 
-### Pushing Changes to GitHub
+## 💾 COMMIT & PUSH
 
 Once you have finished making your desired changes locally and are ready to push them to the cloud, you can run the following sequence:
 
