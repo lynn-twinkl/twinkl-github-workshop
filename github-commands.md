@@ -6,7 +6,7 @@ This cheet sheet covers basic GitHub commands alongside their meanings and funct
 
 - [Setup](##SETUP)
 - [State & Snapshots](#staging-and-snapshots)
-- [Commit & Push](#commit-and-push)
+- [Commit & Push](##commit-and-push)
 
 
 ## ⚙️  SETUP
@@ -53,7 +53,7 @@ git status
 
 This command will print to your terminal a list of all **local** files which either **differ from the latest remote changes** (those which have already been _pushed_ to GitHub), or file which are not being tracked by your remote repository (i.e. they have never been added ot GitHub)
 
-## 💾 COMMIT & PUSH
+## 💾 COMMIT AND PUSH
 
 Once you have finished making your desired changes locally and are ready to push them to the cloud, you can run the following sequence:
 
