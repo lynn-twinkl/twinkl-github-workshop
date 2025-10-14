@@ -4,10 +4,31 @@ Hello everyone! This is a plyground repository contianing a few different tips a
 
 **In this repo you'll find:**
 
-- Command line shortcuts to make your life easier
-- A GitHub cheat sheet!
+```
+.
+├── docs
+│   ├── github-commands.md
+│   └── wsl-for-windows-vm.md
+├── README.md
+├── scripts
+│   ├── hello.js
+│   ├── hello.py
+│   ├── linux-star-wars.sh
+│   └── macos-star-wars.sh
+└── shortcuts
+    ├── aicommit
+    ├── aigd
+    ├── createrepo
+    └── readme.md
+
+4 directories, 11 files
+```
+
+- `./shortcuts` - A collection of CLI shortcuts that will make your life easier
+- `./shortcuts/readme.md` - Installation instructions for some useful CLI tools and utilities
+- `./docs/github-commands.md` - A GitHub cheat sheet
+- `./scripts` - A collection of playground scripts you can run and edit as you please
 - A WSL installation guide for Windows
-- Installation instructions for some useful CLI tools and utilities
 
  
 # ⚙️  REQUIREMENTS
