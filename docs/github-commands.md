@@ -2,37 +2,46 @@
 
 This cheet sheet covers basic GitHub commands alongside their meanings and functions
 
-## ⚙️  SETUP
+## ⚙️  CREATING A REPO
 
-Initialising and cloning repositories
+1. Create a directory for your codebase: `mkdir new-dir`
+2. Go into thwe new directory: `cd new-dir`
+3. Initialise Git `git init`
 
-### 1. Initialising a Git Repository
+> [!NOTE]
+> This command creates a hidden `.git` subdirectory in your current working directory that will keep track of all the changes in your codebase. It does **not** create a new remote repository on GitHub.
 
-```
-git init
-```
-This command creates a hidden `.git` subdirectory in your current working directory that will keep track of all the changes in your codebase
-
-Note this does not actually create a new repository on GitHub, it only initialises Git inside your directory such that it can later work alongside GitHub to store your changes and versions in the cloud.
-
-### 2. Creating a Github Respository
+4. Create a new remote repo from your local directory:
 
 ```
 gh repo create your-repo-name --private --source=. --remote=origin
 ```
-
-The command below will actually let GitHub know that you want to store your proejct's repository in their servers
-
 > [!IMPORTANT]
 > Note that the `--private` flag means that your repository will only be accessible to you and other people you explicitly invite as collaborators. In order to stay legally in the clear, always make sure your company repos are set to private.
 
-### 3. Cloning a Repository
+> [!TIP]
+> You can use the `createrepo` shortcut included in this repository to automate this!
 
-Sometimes you wanna copy a repository from the GitHub GUI into your local machine such that you can make use of the codebase or even make changes to it. In order to so, you can use 
+5. Add your files! Using codex, claude, or your own two hands. Files can incldue images, text, code, etc.
 
-```
-git clone git_repo_url
-```
+6. **To make your first commit,** add all directory contents using `git add .`
+7. **Write your first commit message**: `git commit -m "Your message here!"`
+8. **Push your changes to the cloud**: `git push -u origin main` or `git push -u origin master`
+
+> [!NOTE]
+> To check whether your main branch is called 'main' or 'master', run `git status`
+
+
+
+## ✨ CLONING REPOSITORIES
+
+Sometimes you might want to copy a repository from GitHub into your local machine such that you can make use of the codebase or even make changes to it. Here's how to do it!
+
+1. Go to the relevant github repository online (See [Flowise](https://github.com/FlowiseAI/Flowise) for example)
+2. In there, you'll find a <code style="color:green">green button</code> that says 'Code'. Click on that button, and copy the URL listed in the popup window
+3. Go to your terminal and run `git clone copied-repo-url`
+4. Go into your new copy of the repo with `cd repo-name`
+ 
 
 ## 📸 STAGING & SNAPSHOTS
 
