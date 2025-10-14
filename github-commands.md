@@ -46,6 +46,25 @@ git status
 
 This command will print to your terminal a list of all **local** files which either **differ from the latest remote changes** (those which have already been _pushed_ to GitHub), or file which are not being tracked by your remote repository (i.e. they have never been added ot GitHub)
 
+### 2. Restoring Local Files
+
+**1. Individual Files**
+
+```
+git restore path/to/file
+```
+Will restore the specified file to the latest committed version
+
+**2. Entire codebase**
+
+```
+git restore .
+```
+Will restore entire codebase to latest committed changes for each respective file.
+
+> [!NOTE]
+> This command will not delete any newly created local files that have never been commited. After running this command, you should still se eyour files undes `git status`
+
 ## 💾 COMMIT & PUSH
 
 Once you have finished making your desired changes locally and are ready to push them to the cloud, you can run the following sequence:
@@ -96,3 +115,49 @@ On branch main
 Your branch is up to date with 'origin/main'.
 ```
 
+## 🧪 EDITING
+
+### 1. RENAMING OR MOVING FILES
+
+**Files previously committed and pushed**
+
+```
+git mv path/to/old_filename path/to/new_filename
+``` 
+
+When working inside a git repostiry, make sure you always add `git` before `mv`. This will ensure that the movement or renaming of the file is also tracked in your repo.
+
+
+**Local-only files**
+
+```
+mv path/to/old_filename path/to/new_filename
+```
+
+### 2. REMOVING FILES
+
+**Files previously committed and pushed**
+
+```
+git rm path/to/file
+```
+This will remove the specified file from **future commits**, however, the file will remain in Git's verion history.
+
+```
+git rm --cached path/to/file
+```
+
+This will fully, permanently remove the file from both future commits as well as from the version history.
+
+> [!CAUTION]
+> This command should only be used in situations where you accidentally committed highly-sensitive information, such as API keys.
+
+
+**Local-only files**
+
+```
+rm path/to/file
+```
+
+> [!WARNING]
+> Removing an uncommitted file is absolutely permantent and cannot be undone
