@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# This scripts provides a human-language summary and explanation of your code changes based on your `git diff` results.
+
+file=$1
+
+if ! command -v fabric  &> /dev/null/; then
+	echo "Error: Fabric is not installed on your device. Please install and try again. See ./scripts/readme.md to install"
+	
+	exit 1
+fi
+
+git diff "$file" | fabric -p summarize_git_diff
