@@ -11,7 +11,7 @@ FABRIC_BIN="$HOME/.local/bin/fabric"
 
 if [[ ! -x "$FABRIC_BIN" ]]; then
   echo "Error: fabric hasn't been properly installed"
-  echo "👉 Please review ./scripts/readme.md to install"
+  echo "👉 Please review ./shortcuts/readme.md to install"
   exit 1
 fi
 

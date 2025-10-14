@@ -83,7 +83,7 @@ git restore .
 git diff path/to/file
 ```
 
-or use `aigd path/to/file` to view an AI made summary of the changes (requires `fabric`. See `./scripts/readme.md`)
+or use `aigd path/to/file` to view an AI made summary of the changes (requires `fabric`. See `./shortcuts/readme.md`)
 
 **See history of changes:**
 
@@ -100,7 +100,7 @@ Once you have finished making your desired changes locally and are ready to push
 3. **Push your changes to remote (GitHub)**: `git push`
 
 > [!TIP]
-> View `./github-best-practices.md` in order to learn how to write snappy, useful, and effective commit messages. Alternativelty, let AI do it for you! See `./scripts/readme.md`
+> View `./github-best-practices.md` in order to learn how to write snappy, useful, and effective commit messages. Alternativelty, let AI do it for you! See `./shortcuts/readme.md`
 
 ## 🧪 MOVING & REMOVING FILES
 

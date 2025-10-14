@@ -106,7 +106,7 @@ git clone your_repo_url
 1. Add the `./shortcuts` directory to you PATH. This will make the shortcuts available from any directory in your device.
 
 ```
-echo 'export PATH="$HOME/twinkl-github-workshop/scripts:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/twinkl-github-workshop/shortcuts:$PATH"' >> ~/.bashrc
 ```
 
 2. Restart your shell with the command
@@ -123,5 +123,5 @@ source ~/.bashrc
 source ~/.zshrc
 ```
 
-You should now be able to use the shortcuts from anywhere by running their name and arguments. See `./scripts/readme.md` to learn about the different scripts available in this starter pack
+You should now be able to use the shortcuts from anywhere by running their name and arguments. See `./shortcuts/readme.md` to learn about the different scripts available in this starter pack
 
