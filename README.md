@@ -19,7 +19,7 @@ If you are Windows, **do not panic!** WSL has go your back. WSL is an ultra-ligh
 > [!IMPORTANT]
 > If you are on MacOS, you can skip this section. You're all good to go!
 
-## 🐧 INSTALLING WSL
+## INSTALLING WSL
 
 **1. Launch an Administrator Powershell**
 
@@ -72,7 +72,7 @@ Should print `/bin/bash`. BASH is the language used for interacting with Linux v
 In order to exit WSL and go back to your normal Windows Powershell, simply run `exit`
 
 
-# GETTING STARTED
+# 🧪 GETTING STARTED
 
 ## 1. FORK THE REPO
 
