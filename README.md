@@ -11,7 +11,7 @@ In this repo you'll find:
  
 # GETTING STARTED
 
-### 1. FORK THE REPO
+## 1. FORK THE REPO
 
 Fork this repo to create your own copy
 
@@ -22,7 +22,7 @@ Fork this repo to create your own copy
 > [!NOTE]
 > Forking a repo allows you to not just make a clone of someone else's project, but actually treat your own copy as its own github repository that you can make your own edits and changes to.
 
-### 2. CLONE YOUR FORKED REPO LOCALLY
+## 2. CLONE YOUR FORKED REPO LOCALLY
 
 Now we'll clone your forked repo to your local device. This will allow you to actuall run the commands in this repository as well as to make any relevant changes to it.
 
@@ -38,34 +38,27 @@ Now we'll clone your forked repo to your local device. This will allow you to ac
 git clone your_repo_url
 ```
 
-### ENABLE SHORTCUTS
+## 3. ENABLE SHORTCUTS
 
 1. Add the `./shortcuts` directory to you PATH. This will make the shortcuts available from any directory in your device.
 
 ```
-echo 'export PATH:"$HOME/twinkl-cli-shortcuts/shortcuts:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/twinkl-github-workshop/scripts:$PATH"' >> ~/.bashrc
 ```
 
 2. Restart your shell with the command
 
-**ON WINDOWS RUNNING WSL** 
+**On Windows running WSL** 
 
 ```
 source ~/.bashrc
 ```
 
-**ON MAC**
+**On Mac**
 
 ```
 source ~/.zshrc
 ```
 
-You should now be able to use the shortcuts from anywhere by running their name and arguments. For example
+You should now be able to use the shortcuts from anywhere by running their name and arguments. See `./scripts/readme.md` to learn about the different scripts available in this starter pack
 
-**Create a new repo**
-
-This will create a private github repository based on your current directory
-
-```
-createrepo my-sick-repo private
-```
