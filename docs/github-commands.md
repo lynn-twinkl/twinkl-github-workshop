@@ -4,14 +4,14 @@ This cheet sheet covers basic GitHub commands alongside their meanings and funct
 
 ## ⚙️  CREATING A REPO
 
-1. Create a directory for your codebase: `mkdir new-dir`
-2. Go into thwe new directory: `cd new-dir`
-3. Initialise Git `git init`
+1. **Create a directory for your codebase:** `mkdir new-dir`
+2. **Go into thwe new directory:** `cd new-dir`
+3. **Initialise Git:** `git init`
 
 > [!NOTE]
 > This command creates a hidden `.git` subdirectory in your current working directory that will keep track of all the changes in your codebase. It does **not** create a new remote repository on GitHub.
 
-4. Create a new remote repo from your local directory:
+4. **Create a new remote repo from your local directory:**
 
 ```
 gh repo create your-repo-name --private --source=. --remote=origin
@@ -22,16 +22,15 @@ gh repo create your-repo-name --private --source=. --remote=origin
 > [!TIP]
 > You can use the `createrepo` shortcut included in this repository to automate this!
 
-5. Add your files! Using codex, claude, or your own two hands. Files can incldue images, text, code, etc.
+5. **Add your files!** - Using codex, claude, or your own two hands. Files can incldue images, text, code, etc.
 
-6. **To make your first commit,** add all directory contents using `git add .`
+6. **Make your first commit:** add all directory contents using `git add .`
 7. **Write your first commit message**: `git commit -m "Your message here!"`
 8. **Push your changes to the cloud**: `git push -u origin main` or `git push -u origin master`
+    - For subsequent pushes, you can ommit the '-u origin main' argument
 
 > [!NOTE]
 > To check whether your main branch is called 'main' or 'master', run `git status`
-
-
 
 ## ✨ CLONING REPOSITORIES
 
@@ -59,74 +58,53 @@ This command will print to your terminal a list of all **local** files which eit
 
 **1. Individual Files**
 
+To revent a local file to the latest commited vesion on Github:
+
 ```
 git restore path/to/file
 ```
-Will restore the specified file to the latest committed version
 
 **2. Entire codebase**
+
+To restore entire codebase to latest committed changes for each respective file:
 
 ```
 git restore .
 ```
-Will restore entire codebase to latest committed changes for each respective file.
 
 > [!NOTE]
 > This command will not delete any newly created local files that have never been commited. After running this command, you should still se eyour files undes `git status`
+
+### 3. Seeing Changes
+
+**See current changes made to individual files:**
+
+```
+git diff path/to/file
+```
+
+or use `aigd path/to/file` to view an AI made summary of the changes (requires `fabric`. See `./scripts/readme.md`)
+
+**See history of changes:**
+
+- Use `git log` to view a list of all your file commits
+- Use `git log path/to/file` to view all commits for a specific file
+
 
 ## 💾 COMMIT & PUSH
 
 Once you have finished making your desired changes locally and are ready to push them to the cloud, you can run the following sequence:
 
-### 1. Commit Your Changes To Git
-
-```
-git add path/to/your/file
-```
-
-This registers your local changes to your **local** Git repository. In other words, it adds all the latest changes to the version history
-
-### 2. Add obliagtory Commit Message
-
-```
-git commit -m "This is a commit message"
-```
-
-This adds the obligatory commit message in order to describe the nature of the latest changes that you made.
+1. **Select files to commit**: `git add path/to/your/file`
+2. **Write commit message**: `git commit -m "This is a commit message"`
+3. **Push your changes to remote (GitHub)**: `git push`
 
 > [!TIP]
-> View `./github-best-practices.md` in order to learn how to write snappy, useful, and effective commit messages.
+> View `./github-best-practices.md` in order to learn how to write snappy, useful, and effective commit messages. Alternativelty, let AI do it for you! See `./scripts/readme.md`
 
-> [!TIP]
-> Writing commit messages can be a pain, especially during long coding sessions... let AI do  it for you!
-> Run `aicommit path/to/your/file` to get AI to write your message
+## 🧪 MOVING & REMOVING FILES
 
-### 3. Pushing to GitHub
-
-This is where the magic happens. Now that we have properly saved our newly-changed files, as well as their history and fingerprints to Git, it is time to push all our changes remotely, to our GitHub repository where they can live safely.
-
-```
-git push
-```
-
-or if pushing to a **brand new repo for the very first time**
-
-```
-git push -u origin main
-```
-
-> [!NOTE]
-> Sometimes your main repo branch may be called 'master'
-> To find out which you're on, run `git status`. You should see something like:
-
-```
-On branch main
-Your branch is up to date with 'origin/main'.
-```
-
-## 🧪 EDITING
-
-### 1. RENAMING OR MOVING FILES
+### 1. Renaming or Moving Files
 
 **Files previously committed and pushed**
 
@@ -134,8 +112,8 @@ Your branch is up to date with 'origin/main'.
 git mv path/to/old_filename path/to/new_filename
 ``` 
 
-When working inside a git repostiry, make sure you always add `git` before `mv`. This will ensure that the movement or renaming of the file is also tracked in your repo.
-
+> [!IMPORTANT]
+> When working inside a git repostiry, make sure you always add `git` before `mv`. This will ensure that the movement or renaming of the file is also tracked in your repo. Same applies for `rm` commands.
 
 **Local-only files**
 
@@ -143,7 +121,9 @@ When working inside a git repostiry, make sure you always add `git` before `mv`.
 mv path/to/old_filename path/to/new_filename
 ```
 
-### 2. REMOVING FILES
+Since these files are not being tracked at all by Git, you can just move or rename them normally using bash commands
+
+### 2. Removing Files
 
 **Files previously committed and pushed**
 
@@ -169,4 +149,5 @@ rm path/to/file
 ```
 
 > [!WARNING]
-> Removing an uncommitted file is absolutely permantent and cannot be undone
+> Removing an uncommitted file is absolutely permantent and cannot be undone.
+
