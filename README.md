@@ -35,73 +35,17 @@ Hello everyone! This is a plyground repository contianing a few different tips a
  
 # ⚙️  REQUIREMENTS
 
-Before getting started, you'll need to make sure you're running the right setup. For the purposes of this training, that means making sure you're running on a **UNIX-based** system, that means having access to either a Linux machine or a MacOS machine.
+Before getting started, you'll need to make sure you're running the right setup. For the purposes of this training, that means making sure you're running on a **UNIX-based** system, that means having access to either a **Linux machine** or a **MacOS** machine.
 
 If you are Windows, **do not panic!** WSL has go your back. WSL is an ultra-lightweight tool that allows us to run Linux inside Windows securely and easily.
 
-> [!IMPORTANT]
-> If you are on MacOS, you can skip this section. You're all good to go!
-
-## CREATING A GITHUB ACCOUNT
-
-Sign up to GitHub [here](https://github.com/signup). I recommend using a non-work email address. You can ensure your work is accesisble to a company GitHub account later by adding our team's account as a collaborator to your projects
-
-## INSTALLING WSL
-
-**1. Launch an Administrator Powershell**
-
-`Win > Powershell > Run as administrator`
-
-**2. Install the WSL Virtual Machine Platform**
-
-```powershell
-wsl --install
-```
-
-> [!NOTE]
-> You may be prompted to reboot your system. Please restart your computer as you normally would and open a new Administrator Powershell
-
-
-**3. Install Our Linux Distribution**
-
-```powerhsell
-wsl --install -d Ubuntu
-```
-Wait until you see your **shell prompt** appear at the bottom of your Powershell window once again (that's the bit that looks something like `PS C:\Windows\System32>`). That means the installation is finished. You will be prompted to create a new user.
-
-**4. Create New User**
-
-1. Inside the Windows Powershell, type a new user name (this can be anything) and hit `ENTER`
-2. You will then be prompted to type your password.
-
-> [!IMPORTANT]
-> Please note that when entering passwords on any command line interface, **you will not see anything being typed out**. You won't see any characters or placeholders, no cursor movement or anything. It will look as if nothing is happening. **This is normal**.
-> Please type your password carefully and hit enter when ready
-
-**5. Activate WSL**
-
-This is the fun part! What we've just installed is essentially a TUI-only version of Linux that we can intercat with via our command line! However, in order for your Windows computer to _understand_ when you want to run Linux commands vs Powershell commands, you need to fir activate your WSL virtual machine. To do so, run:
-
-```powershell
-wsl
-```
-
-You will know you are inside Linux when your **shell prompt** turns <code style="color:green">green</code>
-
-**6. You are DONE!**
-
-You can further verify you are running Linux by checking which SHELL you are running: `which $SHELL`
-
-Should print `/bin/bash`. BASH is the language used for interacting with Linux via the command line!
-
-**7. Exiting WSL**
-
-In order to exit WSL and go back to your normal Windows Powershell, simply run `exit`
+- [Windows Setup Guide](./docs/windows-setup.md)
+- [MacOS Setup Guide](./docs/macos-setup.md)
 
 
 # 🧪 GETTING STARTED
 
-## 1. FORK THE REPO
+## 1. Fork The Repo
 
 Fork this repo to create your own copy
 
@@ -112,7 +56,7 @@ Fork this repo to create your own copy
 > [!NOTE]
 > Forking a repo allows you to not just make a clone of someone else's project, but actually treat your own copy as its own github repository that you can make your own edits and changes to.
 
-## 2. CLONE YOUR FORKED REPO LOCALLY
+## 2. Clone Your Forked Repo Locally
 
 Now we'll clone your forked repo to your local device. This will allow you to actuall run the commands in this repository as well as to make any relevant changes to it.
 
@@ -128,7 +72,7 @@ Now we'll clone your forked repo to your local device. This will allow you to ac
 git clone your_repo_url
 ```
 
-## 3. ENABLE SHORTCUTS
+## 3. Enable Shortcuts
 
 1. Add the `./shortcuts` directory to you PATH. This will make the shortcuts available from any directory in your device.
 
