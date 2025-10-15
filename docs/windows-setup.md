@@ -69,6 +69,8 @@ In order to exit WSL and go back to your normal Windows Powershell, simply run `
 
 `Win > Ubuntu`
 
+![Ubuntu](./assets/ubuntu.png)
+
 > [!TIP]
 > Pasting inside your Linux terminal is a little different. Instead of `CTRL + V` try `SHIFT + CTRL + V` or simply **right click**
 
