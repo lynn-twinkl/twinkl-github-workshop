@@ -40,6 +40,10 @@ If you are Windows, **do not panic!** WSL has go your back. WSL is an ultra-ligh
 > [!IMPORTANT]
 > If you are on MacOS, you can skip this section. You're all good to go!
 
+## CREATING A GITHUB ACCOUNT
+
+Sign up to GitHub [here](https://github.com/signup). I recommend using a non-work email address. You can ensure your work is accesisble to a company GitHub account later by adding our team's account as a collaborator to your projects
+
 ## INSTALLING WSL
 
 **1. Launch an Administrator Powershell**
