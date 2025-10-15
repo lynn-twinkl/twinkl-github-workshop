@@ -8,6 +8,8 @@ In this doc you'll find the instructions you need to make sure you're ready to g
 
 `Win > Powershell > Run as administrator`
 
+![Admin Powershell](./assets/admin-powershell.png)
+
 **2. Install the WSL Virtual Machine Platform**
 
 ```powershell
@@ -19,7 +21,7 @@ wsl --install
 
 **3. Install Our Linux Distribution**
 
-```powerhsell
+```powershell
 wsl --install -d Ubuntu
 ```
 Wait until you see your **shell prompt** appear at the bottom of your Powershell window once again (that's the bit that looks something like `PS C:\Windows\System32>`). That means the installation is finished. You will be prompted to create a new user.
@@ -41,13 +43,11 @@ This is the fun part! What we've just installed is essentially a TUI-only versio
 wsl
 ```
 
-You will know you are inside Linux when your **shell prompt** turns <span style="color:green">green</span>
+- You will know you are inside Linux when your **shell prompt** turns <span style="color:green">green</span>
+- You can further verify you are running Linux by checking which SHELL you are running: `which $SHELL`
+- Should print `/bin/bash`. BASH is the language used for interacting with Linux via the command line!
 
-**6. You are DONE!**
-
-You can further verify you are running Linux by checking which SHELL you are running: `which $SHELL`
-
-Should print `/bin/bash`. BASH is the language used for interacting with Linux via the command line!
+![WSL](./assets/wsl.png)
 
 **7. Exiting WSL**
 
@@ -59,7 +59,7 @@ NodeJS allows you to run JavaScript-based applications and commands
 
 **1. Update System**
 
-```
+```bash
 sudo apt update
 sudo apt upgrade
 sudo apt install -y curl
@@ -67,20 +67,20 @@ sudo apt install -y curl
 
 **2. Install the NodeJS Source Repository**
 
-```
+```bash
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 ```
 
 **3. Install NodeJS**
 
-```
+```bash
 sudo apt install -y nodejs
 ```
 
 **4. Verify Installation**
 
 
-```
+```bash
 node -v
 npm -v
 ```
@@ -89,13 +89,13 @@ npm -v
 
 **Gemini CLI**
 
-```
+```bash
 sudo npm install -g @google/gemini-cli
 ```
 
 **Codex CLI**
 
-```
+```bash
 sudo npm install -g @openai/codex
 ```
 
@@ -106,5 +106,4 @@ VSCode is a GUI code editor which seamlessly integrates with extensions such as 
 If you'll be vibe-coding, I recommend installing VSCode as it will allow you to make changes more easily if you ever need to make small manual edits.
 
 You can install VSCode from the Windows app store.
-
 
