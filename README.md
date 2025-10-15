@@ -72,8 +72,17 @@ git clone your_repo_url
 
 1. Add the `./shortcuts` directory to you PATH. This will make the shortcuts available from any directory in your device.
 
+**On Windows running WSL** 
+
 ```
 echo 'export PATH="$HOME/twinkl-github-workshop/shortcuts:$PATH"' >> ~/.bashrc
+```
+
+
+**On Mac**
+
+```
+echo 'export PATH="$HOME/twinkl-github-workshop/shortcuts:$PATH"' >> ~/.zshrc
 ```
 
 2. Restart your shell with the command
