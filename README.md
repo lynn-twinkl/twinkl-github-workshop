@@ -33,7 +33,7 @@ Hello everyone! This is a plyground repository contianing a few different tips a
 
 Before getting started, you'll need to make sure you're running the right setup. For the purposes of this training, that means making sure you're running on a **UNIX-based** system, that means having access to either a **Linux machine** or a **MacOS** machine.
 
-If you are Windows, **do not panic!** WSL has go your back. WSL is an ultra-lightweight tool that allows us to run Linux inside Windows securely and easily.
+If you are Windows, **do not panic!** WSL has go your back. WSL is an ultra-lightweight tool that allows us to run Linux _inside_ Windows securely and easily.
 
 - [Windows Setup Guide](./docs/windows-setup.md)
 - [MacOS Setup Guide](./docs/macos-setup.md)
