@@ -5,12 +5,21 @@
 In this doc you'll find the instructions you need to make sure you're ready to go for vibe-coding from your Linux terminal!
 
 > [!WARNING]
-> Command lines (Powershell, Terminal, etc) are text user interfaces (TUIs). This means that they really _really love_ text and won't let  you interact with them with your mouse. For example, you won't be able to move your typing cursor with you mouse.
+> This setup guide involves a lot of Command Line usage.
+> Command lines (Powershell, Terminal, etc) are text user interfaces (TUIs). This means that they really _really love_ text and won't let you interact with them through your mouse. For example, you won't be able to move your typing cursor with you mouse.
 
 > [!TIP]
 > Navigate around your text, simply use your **keyboard's arrows**.
 > Ignore your current line and start a new one by hitting `CTRL + C`
 > Cancel/stop any commands with `CTRL + C`
+
+## 🧪 Create a GitHub Account
+
+Sign up to GitHub [here](https://github.com/signup).
+
+> [!TIP]
+> I recommend using a non-work email address. You can ensure your work is accesisble to a company GitHub account later by adding our team's account as a collaborator to your projects
+
 
 ## 🐧 Install WSL
 
