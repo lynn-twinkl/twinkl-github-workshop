@@ -1,5 +1,7 @@
 # README
 
+![Twinkl Banner](./docs/assets/twinkl-banner.png)
+
 Hello everyone! This is a plyground repository contianing a few different tips and goodies for you to learn to play with the github CLI and to help you vibe-codinx experience go much more smoothly.
 
 **In this repo you'll find:**
