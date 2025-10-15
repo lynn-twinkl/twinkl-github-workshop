@@ -53,6 +53,10 @@ wsl
 
 In order to exit WSL and go back to your normal Windows Powershell, simply run `exit`
 
+---
+> [!IMPORTANT]
+> All remaining instructions must be carried out _inside_ WSL. Make sure your Linux terminal is active!
+
 ## 💚 Install NodeJS
 
 NodeJS allows you to run JavaScript-based applications and commands
