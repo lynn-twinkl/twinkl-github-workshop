@@ -42,12 +42,12 @@ Wait until you see your **shell prompt** appear at the bottom of your Powershell
 2. You will then be prompted to type your password. Make sure to type something you remember
 
 > [!IMPORTANT]
-> Please note that when entering passwords on any command line interface, **you will not see anything being typed out**. You won't see any characters or placeholders, no cursor movement or anything. It will look as if nothing is happening. **This is normal**.
-> Please type your password carefully and hit enter when ready
+> When entering passwords on any command line interface, **you will not see anything being typed out**. You won't see any characters or placeholders, no cursor movement or anything. It will look as if nothing is happening. **This is normal**.
+> Please type your password carefully and hit `ENTER` when ready
 
 **5. Activate WSL**
 
-This is the fun part! What we've just installed is essentially a TUI-only version of Linux that we can intercat with via our command line! However, in order for your Windows computer to _understand_ when you want to run Linux commands vs Powershell commands, you need to fir activate your WSL virtual machine. To do so, run:
+This is the fun part! What we've just installed is essentially a TUI-only version of Linux that we can intercat with via our command line! However, in order for your Windows computer to _understand_ when you want to run Linux commands vs Powershell commands, you need to first activate your WSL virtual machine. To do so, run:
 
 ```powershell
 wsl
