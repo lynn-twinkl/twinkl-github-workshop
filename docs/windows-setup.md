@@ -1,6 +1,16 @@
 # WINDOWS SETUP INSTRUCTIONS
 
+![Windows Banner](./assets/windows-banner.png)
+
 In this doc you'll find the instructions you need to make sure you're ready to go for vibe-coding from your Linux terminal!
+
+> [!WARNING]
+> Command lines (Powershell, Terminal, etc) are text user interfaces (TUIs). This means that they really _really love_ text and won't let  you interact with them with your mouse. For example, you won't be able to move your typing cursor with you mouse.
+
+> [!TIP]
+> Navigate around your text, simply use your **keyboard's arrows**.
+> Ignore your current line and start a new one by hitting `CTRL + C`
+> Cancel/stop any commands with `CTRL + C`
 
 ## 🐧 Install WSL
 
@@ -55,7 +65,12 @@ In order to exit WSL and go back to your normal Windows Powershell, simply run `
 
 ---
 > [!IMPORTANT]
-> All remaining instructions must be carried out _inside_ WSL. Make sure your Linux terminal is active!
+> All remaining instructions must be carried out _inside_ WSL. Make sure your Linux terminal is active! Either via the `wsl` command in PowerShell or by opening the Ubuntu app from the Windows menu
+
+`Win > Ubuntu`
+
+> [!TIP]
+> Pasting inside your Linux terminal is a little different. Instead of `CTRL + V` try `SHIFT + CTRL + V` or simply **right click**
 
 ## 💚 Install NodeJS
 
