@@ -2,8 +2,58 @@
 
 In this doc you'll find the instructions you need to make sure you're ready to go for vibe-coding from your Linux terminal!
 
+## 🐧 Install WSL
 
-## NodeJS
+**1. Launch an Administrator Powershell**
+
+`Win > Powershell > Run as administrator`
+
+**2. Install the WSL Virtual Machine Platform**
+
+```powershell
+wsl --install
+```
+
+> [!NOTE]
+> You may be prompted to reboot your system. Please restart your computer as you normally would and open a new Administrator Powershell
+
+**3. Install Our Linux Distribution**
+
+```powerhsell
+wsl --install -d Ubuntu
+```
+Wait until you see your **shell prompt** appear at the bottom of your Powershell window once again (that's the bit that looks something like `PS C:\Windows\System32>`). That means the installation is finished. You will be prompted to create a new user.
+
+**4. Create New User**
+
+1. Inside the Windows Powershell, type a new user name (this can be anything) and hit `ENTER`
+2. You will then be prompted to type your password. Make sure to type something you remember
+
+> [!IMPORTANT]
+> Please note that when entering passwords on any command line interface, **you will not see anything being typed out**. You won't see any characters or placeholders, no cursor movement or anything. It will look as if nothing is happening. **This is normal**.
+> Please type your password carefully and hit enter when ready
+
+**5. Activate WSL**
+
+This is the fun part! What we've just installed is essentially a TUI-only version of Linux that we can intercat with via our command line! However, in order for your Windows computer to _understand_ when you want to run Linux commands vs Powershell commands, you need to fir activate your WSL virtual machine. To do so, run:
+
+```powershell
+wsl
+```
+
+You will know you are inside Linux when your **shell prompt** turns <span style="color:green">green</span>
+
+**6. You are DONE!**
+
+You can further verify you are running Linux by checking which SHELL you are running: `which $SHELL`
+
+Should print `/bin/bash`. BASH is the language used for interacting with Linux via the command line!
+
+**7. Exiting WSL**
+
+In order to exit WSL and go back to your normal Windows Powershell, simply run `exit`
+
+## 💚 Install NodeJS
 
 NodeJS allows you to run JavaScript-based applications and commands
 
