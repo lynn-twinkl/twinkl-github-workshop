@@ -6,33 +6,29 @@ Hello everyone! This is a plyground repository contianing a few different tips a
 
 **In this repo you'll find:**
 
-```
+```bash
 .
 ├── docs
-│   ├── github-commands.md
+│   ├── assets
+│   ├── github-commands.md    # GitHub cheat sheet
+│   ├── macos-setup.md        
+│   ├── windows-setup.md
 │   └── wsl-for-windows-vm.md
 ├── README.md
-├── scripts
+├── scripts      # A collection of playground scripts to run and modofy as you please
 │   ├── hello.js
 │   ├── hello.py
 │   ├── linux-star-wars.sh
 │   └── macos-star-wars.sh
-└── shortcuts
+└── shortcuts    # A collection of CLI shortcuts that will make your life easier
     ├── aicommit
     ├── aigd
     ├── createrepo
-    └── readme.md
+    └── readme.md    # Installation instructions for some useful CLI tools and utilities
 
-4 directories, 11 files
+5 directories, 15 files
 ```
 
-- `./shortcuts` - A collection of CLI shortcuts that will make your life easier
-- `./shortcuts/readme.md` - Installation instructions for some useful CLI tools and utilities
-- `./docs/github-commands.md` - A GitHub cheat sheet
-- `./scripts` - A collection of playground scripts you can run and edit as you please
-- A WSL installation guide for Windows
-
- 
 # ⚙️  REQUIREMENTS
 
 Before getting started, you'll need to make sure you're running the right setup. For the purposes of this training, that means making sure you're running on a **UNIX-based** system, that means having access to either a **Linux machine** or a **MacOS** machine.
