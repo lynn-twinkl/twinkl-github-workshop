@@ -13,7 +13,7 @@ In this doc you'll find the instructions you need to make sure you're ready to g
 > Ignore your current line and start a new one by hitting `CTRL + C`
 > Cancel/stop any commands with `CTRL + C`
 
-## 🧪 Create a GitHub Account
+# 🧪 Create a GitHub Account
 
 Sign up to GitHub [here](https://github.com/signup).
 
@@ -21,7 +21,7 @@ Sign up to GitHub [here](https://github.com/signup).
 > I recommend using a non-work email address. You can ensure your work is accesisble to a company GitHub account later by adding our team's account as a collaborator to your projects
 
 
-## 🐧 Install WSL
+# 🐧 Install WSL
 
 **1. Launch an Administrator Powershell**
 
@@ -83,7 +83,7 @@ In order to exit WSL and go back to your normal Windows Powershell, simply run `
 > [!TIP]
 > Pasting inside your Linux terminal is a little different. Instead of `CTRL + V` try `SHIFT + CTRL + V` or simply **right click**
 
-## 💚 Install NodeJS
+# 💚 Install NodeJS
 
 NodeJS allows you to run JavaScript-based applications and commands
 
@@ -115,7 +115,7 @@ node -v
 npm -v
 ```
 
-## 👾 Install VSCode
+# 👾 Install VSCode
 
 VSCode is a GUI code editor which seamlessly integrates with extensions such as `codex`, `claude code`, etc.
 
