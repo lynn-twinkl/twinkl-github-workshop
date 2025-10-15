@@ -95,4 +95,3 @@ VSCode is a GUI code editor which seamlessly integrates with extensions such as 
 If you'll be vibe-coding, I recommend installing VSCode as it will allow you to make changes more easily if you ever need to make small manual edits.
 
 [Install VSCode here](https://code.visualstudio.com/download)
-
