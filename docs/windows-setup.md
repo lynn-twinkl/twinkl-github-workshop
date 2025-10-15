@@ -89,7 +89,7 @@ node -v
 npm -v
 ```
 
-## Coding CLI Tools
+## ✨ Install Coding CLI Tools
 
 **Gemini CLI**
 
@@ -103,7 +103,7 @@ sudo npm install -g @google/gemini-cli
 sudo npm install -g @openai/codex
 ```
 
-## VSCode
+## 👾 Install VSCode
 
 VSCode is a GUI code editor which seamlessly integrates with extensions such as `codex`, `claude code`, etc.
 
