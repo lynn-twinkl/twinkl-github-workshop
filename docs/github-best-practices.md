@@ -81,6 +81,10 @@ Take a little extra time to add a few extra bulletpoints outlining excatly what 
 > The `aicommit` shortcut included in this repository already follows these rules! So feel free to use it run your commits without the adminy pain
 
 
+## DEVELOPMENT
 
+- **Don't fear branches** -- If your codebase is working and you wanna add a new feature, simply start a new branch and **merge** it later! You can ask AI to do this for you and it will handle any conflicts!
+    - Note: before creating a new branch **always try to commit your latest changes to `main`**
+- **Starting over** -- `git restore` is always there for you. If you suddenly found yourself lost in a sea of ineffective changes, you can always go back to your latest working version
 
 
