@@ -1,6 +1,6 @@
 import time
 
-print('Hi, my name is Lynn!')
+print('Hi, my name is Joao!')
 
 time.sleep(1)
 
